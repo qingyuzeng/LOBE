@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".money_pay"
+    android:background="#FDEBD4">
+
+    //抓資料庫值直接顯示(像芷安他們的)
+    <TextView
+        android:id="@+id/tosomeone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="您將轉帳給：" />
+
+    <TextView
+        android:id="@+id/now_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="目前擁有金額：" />
+
+    <EditText
+        android:id="@+id/how_much"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:inputType="number"
+        android:hint="請輸入轉帳金額" />
+
+    <Button
+        android:id="@+id/btn_ok2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="#CCC79C"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="20dp"
+        android:text="確認" />
+
+    <Button
+        android:id="@+id/btn_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:stateListAnimator="@null"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#7B7B7B"
+        android:text="取消"/>
+
+</LinearLayout>

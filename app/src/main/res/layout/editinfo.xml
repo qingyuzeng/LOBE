@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".editinfo"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FDEBD4">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/edit_imagege"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/bg_border"  />
+        <Button
+            android:id="@+id/btn_editchoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:background="#CCC79C"
+            android:stateListAnimator="@null"
+            android:text="選擇"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名："
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/revisename"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginBottom="-10dp"
+                android:background="#CCC79C"
+                app:srcCompat="@drawable/ic_mode_edit_black_24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:maxLength="8"
+            android:gravity="center"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/edittext_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"/>
+
+    <Button
+        android:id="@+id/concern_edit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="20dp"
+        android:background="#CCC79C"
+        android:text="確定修改"/>
+
+    <Button
+        android:id="@+id/btn_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:background="#00000000"
+        android:stateListAnimator="@null"
+        android:textColor="#7B7B7B"
+        android:text="返回"/>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FDEBD4">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/imagege"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/bg_border"  />
+        <Button
+            android:id="@+id/btn_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:background="#CCC79C"
+            android:stateListAnimator="@null"
+            android:text="選擇"/>
+
+    </LinearLayout>
+
+    //最上方加上上傳照片的程式
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名："
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="請輸入姓名"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:maxLength="8"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手機號碼："
+            android:layout_marginTop="15dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_m"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:text="一般會員"
+            android:tag="1"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_c"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:text="廠商"
+            android:tag="2"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:layout_marginTop="25dp"
+        android:paddingBottom="15dp"
+        android:textSize="20dp"
+        android:background="#CCC79C"
+        android:text="註冊"/>
+</LinearLayout>
+

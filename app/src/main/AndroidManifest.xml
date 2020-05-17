@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sa_final">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="LoBe"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".member_activity"
+            android:label="已新增活動"
+            android:icon="@drawable/act">
+            <intent-filter>
+                <action android:name="company" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".member_good" />
+        <activity android:name=".activity_member_list" />
+        <activity android:name=".member_goods"
+            android:icon="@drawable/shop"
+            android:label="已上架商品">
+            <intent-filter>
+                <action android:name="company" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".VerifyPhoneActivity" />
+        <activity android:name=".Welcome" />
+        <activity android:name=".Activity_create" />
+        <activity android:name=".activity_join" />
+        <activity android:name=".goods" />
+        <activity android:name=".Home" />
+        <activity android:name=".money_get" />
+        <activity android:name=".money_pay" />
+        <activity android:name=".record" />
+        <activity android:name=".register" />
+        <activity android:name=".activity_join_list" />
+        <activity android:name=".activitycomplete" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation" />
+        <activity
+            android:name=".activity_list"
+            android:icon="@drawable/act"
+            android:label="活動">
+            <intent-filter>
+                <action android:name="member" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity_list_join"
+            android:icon="@drawable/shop"
+            android:label="已報名活動">
+            <intent-filter>
+                <action android:name="member" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".choose_goods"
+            android:icon="@drawable/shop"
+            android:label="商品選購">
+            <intent-filter>
+                <action android:name="member" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".editinfo"
+            android:icon="@drawable/edit"
+            android:label="修改資料">
+            <intent-filter>
+                <action android:name="member" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activitylist_for_company"
+            android:icon="@drawable/act"
+            android:label="活動清單">
+            <intent-filter>
+                <action android:name="company" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".create_goods"
+            android:icon="@drawable/shop"
+            android:label="創建商品">
+            <intent-filter>
+                <action android:name="company" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
